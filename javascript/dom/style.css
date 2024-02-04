@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+}
+*{
+    background-color: black;
+    text-align: center;
+}
+button{
+    background-color: greenyellow;
+    text-emphasis-color: white;
+}
+h4{
+    background-color: yellow;
+    font-style: oblique;
+}
