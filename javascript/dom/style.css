@@ -4,7 +4,7 @@ h1 {
     text-align: center;
 }
 *{
-    background-color: black;
+    background-color: rgb(145, 255, 0);
     text-align: center;
 }
 button{
@@ -14,4 +14,15 @@ button{
 h4{
     background-color: yellow;
     font-style: oblique;
+}
+h2{
+    background-color: rgb(212, 255, 0);
+    font-size: large;
+    text-align: center;
+    
+}
+.struct{
+    background-color: yellow;
+    font-size: larger;
+    text-align: end;
 }
