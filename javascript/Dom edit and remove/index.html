@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Pratice for edit and remove element</title>
+</head>
+<body style="background-color: black;color:aliceblue">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+    <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>       
+        </ul>
+</body>
+<script>
+    function addLanguage(LangName){
+        const li=document.createElement('li');
+        li.innerHTML=LangName
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Hello World")
+    addLanguage("typescript")
+    addLanguage("python")
+    addLanguage("Html and Css")
+
+
+    function addOptLanguage(LangName){
+    const li=document.createElement('li')
+    li.appendChild(document,createTextNode(LangName))
+    }
+
+
+
+    <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>       
+        </ul>
+</script>
+<script src="scripts.js"></script>
+<body>
+    <h2>Remove Element</h2>
+    <h2>Remove Element</h2>
+    <h2>Remove Element</h2>
+    <h2>Remove Element</h2>
+</body>
+</html>
