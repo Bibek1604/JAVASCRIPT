@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1  id="world">hello</h1>
+</body>
+    <script>
+
+        ///settimeout ==method is used to call a function after a specified amount of time
+///        setTimeout(function(){
+  ///  alert("hello world");
+///},1000) 
+
+
+const myName=function(){
+    alert("And My name comes Here")
+}
+setTimeout(myName,3000)
+
+const change=function(){
+    const world = document.getElementById('world');
+const newe=document.createElement('h1');
+world.innerHTML = "Hello World";
+world.appendChild(newe);
+}
+setTimeout(change,5000)
+
+
+    </script>
+    
+
+</html> 
