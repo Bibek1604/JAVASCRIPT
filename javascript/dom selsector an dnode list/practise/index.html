@@ -1,0 +1,127 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+        #content {
+          margin-top: 50px;
+          padding: 20px;
+          border: 2px solid #ccc;
+          background-color: #f9f9f9;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      </style>
+
+
+</head>
+<body>
+    <div id="content">
+        <h1>Change Background Color</h1>
+        <p>Click the button below to change the background color of this content area.</p>
+        <button id="changeColorBtn">Change Color</button>
+      </div>
+      
+</body>
+<script>
+ const changeBtn = document.getElementById('changeColorBtn');
+ const content = document.getElementById('content');
+
+ function changbgeColor(){
+    const color = Math.floor(Math.random()*16777215).toString(16);
+    content.style.backgroundColor='#'+ color;
+ }
+    changeBtn.addEventListener('click',changbgeColor)
+</script>
+</html> 
+
+
+ -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>DOM Visibility Toggle</title>
+ </head>
+ <body>
+ 
+ <button id="toggleButton">Toggle Element</button>
+ <div id="toggleElement" style="display:none;">This is the element to be toggled.</div>
+ </body>
+ 
+ <script>
+    const toggleButton=document.getElementById('toggleButton');
+    const toggleElement=document.getElementById('toggleElement');
+
+    toggleButton.addEventListener('click',toggleElementVisibility);
+
+    function toggleElementVisibility(){
+        if(toggleElement.style.display==='none'){
+            toggleElement.style.display='block';
+        }else{
+            toggleElement.style.display='none';
+        }
+    }
+
+ </script>
+
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button id="removeItemBtn">Remove Last Item</button>
+    <button id="addItemBtn">Add Item</button>
+
+
+<script>
+    const addItemBtn=document.getElementById('addItemBtn');
+const myList=document.getElementById('myList');
+const removeButton=document.getElementById('removeItemBtn');
+
+function addli(){
+    const li=document.createElement('li');
+    li.textContent='item'+'#';
+    myList.appendChild(li);
+
+}
+
+
+function removeli(){
+    const liSt=myList.lastElementChild;
+    if(liSt){
+        myList.removeChild(liSt);
+    }
+    
+}
+removeButton.addEventListener('click',removeli);
+addItemBtn=document.addEventListener('click',addli);
+
+</script>
+</body>
+</html>
