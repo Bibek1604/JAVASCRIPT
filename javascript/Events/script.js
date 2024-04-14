@@ -28,7 +28,19 @@
 // <!-- #####bubling 
 // ==inside to outside
 // ##capturing
-
+const one = document.getElementById('owl');
+        one.addEventListener('clicked', function(e) {
+            alert("you hvae clicked wrong picture it is not from Butwal")
+            console.log("owl clicked")
+            console.log(e.timeStamp);
+            console.log(e.defaultPrevented)
+            console.log(e.target)
+            console.log(e.screenX)
+            console.log(e.screenX)
+            console.log(e.shiftKey)
+            console.log(e.ctrlKey)
+            console.log(e.altKey)
+        },true)
 // ===outside to inside -->
 //         const Images = document.querySelector('#images')
 //         Images.addEventListener("click",function(e){
