@@ -43,7 +43,18 @@ btn.addEventListener('mouseover', function() {
   });
 
 
-const img = document.getElementById(img);
+const img = document.querySelector('#img');
 img.addEventListener('click',function(e){
     console.log(e)
+    const remove = e.target.parentNode;
+    remove.remove()
+
 })
+
+const textbox1 = document.querySelector("#textbox");
+textbox1.addEventListener('click', function(e) {
+    console.log(e);
+    const rem= e.target.tagName;
+    e.target.remove();
+
+});
