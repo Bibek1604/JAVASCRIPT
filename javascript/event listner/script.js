@@ -41,4 +41,9 @@ btn.addEventListener('mouseover', function() {
   textbox.addEventListener("keydown", (event) => {
       output.textContent = `You have pressed "${event.key}"`;
   });
-  
+
+
+const img = document.getElementById(img);
+img.addEventListener('click',function(e){
+    console.log(e)
+})
