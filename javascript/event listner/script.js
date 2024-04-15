@@ -34,3 +34,11 @@ btn.addEventListener('mouseover', function() {
     // Your code to run when the mouse hovers over the element
     box.style.backgroundColor = 'lightgreen';
   });
+
+
+  const textbox = document.querySelector('#textbox');
+  const output =  document.querySelector('#output'); // Assuming you have an element with id "output"
+  textbox.addEventListener("keydown", (event) => {
+      output.textContent = `You have pressed "${event.key}"`;
+  });
+  
