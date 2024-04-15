@@ -35,7 +35,7 @@ btn.addEventListener('mouseover', function() {
     box.style.backgroundColor = 'lightgreen';
   });
 
-
+///keys get vissible if we click on any key
   const textbox = document.querySelector('#textbox');
   const output =  document.querySelector('#output'); // Assuming you have an element with id "output"
   textbox.addEventListener("keydown", (event) => {
@@ -43,6 +43,8 @@ btn.addEventListener('mouseover', function() {
   });
 
 
+
+  ///images get remove while clicking them
 const img = document.querySelector('#img');
 img.addEventListener('click',function(e){
     console.log(e)
@@ -51,6 +53,8 @@ img.addEventListener('click',function(e){
 
 })
 
+
+///event added while clicking the box
 const textbox1 = document.querySelector("#textbox");
 textbox1.addEventListener('click', function(e) {
     console.log(e);
