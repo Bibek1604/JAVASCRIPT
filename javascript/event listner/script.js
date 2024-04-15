@@ -23,6 +23,9 @@ function bgColor() {
     document.body.style.backgroundColor = color[random];
 
 }
+//background color change on button click
 
 btn.addEventListener('click', bgColor); // add different color on background
 btn.removeEventListener("click", bgColor);// remove different color on backgorund
+
+
