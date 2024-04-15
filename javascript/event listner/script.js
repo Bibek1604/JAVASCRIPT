@@ -30,3 +30,7 @@ function bgColor() {
 
 // ////
 btn.addEventListener('mouseover', bgColor); // add different color on background
+btn.addEventListener('mouseover', function() {
+    // Your code to run when the mouse hovers over the element
+    box.style.backgroundColor = 'lightgreen';
+  });
