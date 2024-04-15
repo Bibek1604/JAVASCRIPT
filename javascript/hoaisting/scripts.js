@@ -89,6 +89,8 @@
 // b()
 // console.log(x)
 
+..console.log
+
 // function a(){
 //     let x=90
 //     console.log(x)
