@@ -25,7 +25,8 @@ function bgColor() {
 }
 //background color change on button click
 
-btn.addEventListener('click', bgColor); // add different color on background
-btn.removeEventListener("click", bgColor);// remove different color on backgorund
+// btn.addEventListener('click', bgColor); // add different color on background
+// btn.removeEventListener("click", bgColor);// remove different color on backgorund
 
-
+// ////
+btn.addEventListener('mouseover', bgColor); // add different color on background
