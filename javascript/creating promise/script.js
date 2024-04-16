@@ -53,3 +53,26 @@
 // }).catch(function(error){
 //     console.log(error);
 // });
+
+
+
+let isOrderAccepted = false;
+let isValvetFound=false;
+
+
+window.addEventListener('load',function(){
+    document.getElementById('acceptOrder').addEventListener('click',function(){
+        askRestuantToAcceptOrReject();
+    });
+
+})
+
+//step1: Chewcking weather resturant  Accepted Order or not 
+
+
+function askRestuantToAcceptOrReject(){
+    setTimeout(function(){
+        isOrderAccepted=confirm("should resturant accept order or not?")
+        console.log(isOrderAccepted)
+    },1000);
+}
