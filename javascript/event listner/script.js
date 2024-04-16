@@ -29,11 +29,15 @@ function bgColor() {
 // btn.removeEventListener("click", bgColor);// remove different color on backgorund
 
 // ////
+setTimeout(()=>{
+
 btn.addEventListener('mouseover', bgColor); // add different color on background
 btn.addEventListener('mouseover', function() {
     // Your code to run when the mouse hovers over the element
     box.style.backgroundColor = 'lightgreen';
   });
+},5000)
+
 
 ///keys get vissible if we click on any key
   const textbox = document.querySelector('#textbox');
@@ -41,7 +45,6 @@ btn.addEventListener('mouseover', function() {
   textbox.addEventListener("keydown", (event) => {
       output.textContent = `You have pressed "${event.key}"`;
   });
-
 
 
   ///images get remove while clicking them
